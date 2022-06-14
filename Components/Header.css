@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
+
+.navbar{
+    background-color: #292929;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(15px);
+    width: 80%;
+    padding: 10px ;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(252, 252, 252);
+  padding: 30px;
+}
+
+.icon{
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 5px;
+    font-weight: bold;
+    transition: all .5s ease;
+    color: #fad506;
+}
+
+.icon:hover{
+    color: #ccaf0a;
+}
+.search{
+    flex: 1;
+   width: 100%;
+  position: relative;
+}
+
+.srh{
+    position: absolute;
+    top: 15%;
+    right: 30%;
+    margin-right: 10px;
+    font-size: 22px;
+   color: gray;
+}
+.search input{
+    color: #292929;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);   
+    outline: none;
+    border-radius: 7px;
+    font-size: 15px;
+    width: 70%;
+    padding:10px;
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+  color: rgb(255, 255, 255);
+}
+.search input::placeholder{
+    color: rgb(216, 211, 211);
+    font-style: italic;
+}
+
+.logo{
+    flex: 1;
+    font-size: 28px;
+    cursor: pointer;
+    align-items: center;
+   margin-top: -5px;
+}
+.logo a{
+    text-decoration: none;
+    color: #eaf0fb;
+    text-shadow: 2px 2px rgba(0,0,0,0.3);}
+.logo span{
+    font-family: 'Updock', cursive;
+    color: #fad506;
+    font-size: 32px;
+}
+
+.cart__icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wishlist{
+    margin-right: 10px;
+    display: flex;
+    margin-bottom: 3px;
+    align-items: center;
+}
+.acct{
+    margin-top: -1px;
+}
+    .cart{
+        margin-right: 10px;
+        display: flex;
+        margin-bottom: 8px;
+        align-items: center;
+        justify-content: center;
+    }
+    .acct{
+        margin-right:7px;
+    }
+
+.topnav{
+    display: flex;
+    border-bottom: 1px solid #727171;
+    justify-content: space-between;
+    padding: 10px;
+    color: #727171;
+    align-items: center;
+}
+.others{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.others > p{
+    margin-right: 40px;
+}
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login a{
+    text-decoration: none;
+    color: #727171;
+}
+
+.open{
+    display: none;
+}
+
+.call p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cal{
+    margin-right: 5px;
+}
+.carty{
+    background-color: #727171;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,10px);
+    padding: 5px 0;
+}
+
+.cartitem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+margin-bottom: 20px;
+background-color: #727171;
+padding: 0px;
+}
+.cartitemimg{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.cartitemdetail {
+    display: flex;
+    flex: 1;
+    padding: 0 20px;
+    flex-direction: column;
+}
+
+.cartbtn{
+    background-color: #727171;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1300px){
+  
+
+    .navbar{
+        background: rgba(0,0,0,0.5);
+        backdrop-filter: blur(15px);      
+      width: 100%;
+        padding: 10px ;
+        align-items: center;
+        margin: 0 auto;
+    }
+    
+}
+@media screen and (max-width: 990px){
+    
+    .navbar__mobile{
+        display: block;
+        position: relative;
+           z-index: 9999;
+     
+        padding: 27px 20px;
+        height: 55vh;
+        width: 300px;
+        background: black;
+    }
+    
+    .close{
+        position: absolute;
+        right: 5%;
+       font-size: 20px;
+       color: white;
+      cursor: pointer;
+    }
+    
+    .close:hover{
+        color: #ccaf0a;
+    }
+    
+    .search__mobile{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .search__mobile input{
+        background-color: transparent;
+        padding: 8px;
+        outline: none;
+        border: 1px solid #727171;
+        width: 100%;
+        color: white;
+       
+    }
+    
+    .mobile__srh{
+        background-color: #ccaf0a;
+        padding: 16.5px;
+        color: white;
+        cursor: pointer;
+    }
+    .nav__links{
+        text-decoration: none;
+    }
+    .nav__links li{
+        border-bottom: 1px solid #727171;
+      list-style: none;
+      margin-bottom: 20px;
+      padding: 4px;
+    }
+    .nav__links li a{
+        text-decoration: none;
+        color: #bebcbc;
+        font-size: 12px;
+        transition: all .5s ease;
+    }
+    .nav__links li a:hover{
+        color: #ccaf0a;
+    }
+    
+    .mobile__socials{
+        display: flex;
+      justify-content: space-evenly;
+        align-items: center;
+        margin-top: 40px;
+        font-size: 22px;
+        color: #727171;
+        cursor: pointer;
+    }
+    .scc{
+        border-radius: 50%;
+        border: 1px solid #727171;
+    }
+    .scc:hover{
+        color: #ccaf0a;
+    }
+    
+    .navbar{
+        width: 100%;
+    }
+    .nav__container{
+        padding: 30px 10px;
+    }
+    .search{
+        display: none;
+    }
+    .open{
+        display: block;
+    }
+    .navbar__mobile{
+        display: block;
+    }
+    .call{
+        font-size: 14px;
+        align-items: center;
+    }
+    .call p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    }
+@media screen and (max-width: 460px){
+    .icon{
+        font-size: 20px
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .logo span{
+        font-size: 24px;
+    }
+    .wishlist{
+        margin-right: 8px;
+        display: flex;
+        margin-bottom: 3px;
+    }
+        .cart{
+            margin-right: 10px;
+            display: flex;
+            margin-bottom: 5px;
+        }
+        .acct{
+            margin-right:5px;
+        }
+    
+    }

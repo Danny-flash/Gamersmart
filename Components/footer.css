@@ -1,0 +1,126 @@
+.footer{
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(15px);  
+    width: 80%;
+    padding: 10px ;
+    align-items: center;
+    margin: 0 auto;
+}
+.footer__container{
+    padding: 70px;
+    padding-left: 180px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.subfooter{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.subfooter1{
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: -18px;
+}
+.footer__note{
+    margin-top: 0x;
+    width: 80%;
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 25px;
+    line-height: 1.6rem;
+}
+.footer_logo p{
+  color: white;
+  cursor: pointer;
+}
+.subfooter a{
+    color: gray;
+    text-decoration: none;
+    transition: .5s all ease;
+    margin-bottom: 11px;
+    font-size: 14px;
+  
+}
+.subfooter a:hover{
+    color: #ccaf0a;
+}
+.subfooter header{
+    color: white;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+.subfooter__icons{
+    display: flex;
+}
+.footer__icon{
+    font-size: 25px;
+    margin-right: 10px;
+    color: gray;
+    transition: all .5s ease;
+}
+.footer__icon:hover{
+    color: #ccaf0a;
+}
+.payment{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-top: 1px solid gray;
+}
+.payment p{
+    color: gray;
+    font-size: 15px;
+}
+.payment__card{
+    display: flex;
+}
+.payment__card img{
+    width:32px;
+    margin-right: 7px;
+    height: 20px;
+object-fit: contain;
+cursor: pointer;
+}
+@media screen and (max-width: 1300px){
+  
+
+    .footer{
+        width: 100%;
+
+    }
+    
+}
+@media screen and (max-width: 990px){
+  
+    .footer__container{
+        padding: 30px;
+        padding-left: 155px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .payment{
+        display: flex;
+        flex-direction: column;
+        padding: 15px 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .payment p{
+        margin-bottom: 8px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .subfooter1{
+        margin-top: -9px;
+    }
+}
+@media screen and (max-width: 575px){
+  
+    .footer__container{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+}

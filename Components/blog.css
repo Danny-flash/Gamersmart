@@ -1,0 +1,87 @@
+.blogs{
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);    width: 80%;    width: 80%;
+    margin: 0 auto;
+    padding: 25px 50px;
+  
+}
+.blog__body{
+    margin: 20px auto;
+    width: 90%;
+}
+.blog__cat{
+    position: relative;
+    height: 400px;
+    padding: 8px;
+    transition: all .5s ease;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);    width: 80%;}
+
+.blog__img img{
+    width: 100%;
+    object-fit: cover;
+    height: 280px;
+    border-radius: 7px;
+}
+.blog__body{
+    display: flex;
+    flex-direction: column;
+}
+.blog__body a{
+   text-decoration: none;
+  margin-bottom: 5px;
+  
+}
+.blog__body .genre{
+    color: #8d8888;
+    margin-top: 5px;
+}
+.blog__body .title{
+    text-align: left;
+    font-size: 15px;
+    color: #504f4f;
+}
+.articule__link{
+    display: flex;
+    font-size: 13px;
+}
+.art__date{
+    border-right: 1px solid #504f4f ;
+    padding-right: 8px;
+    color: #eaf0fb;
+    text-shadow: 2px 2px rgba(0,0,0,0.3);    font-weight: 400;
+}
+
+.art__comment{
+    padding-left: 8px;
+    color: #eaf0fb;
+    text-shadow: 2px 2px rgba(0,0,0,0.3);    font-weight: 400;
+}
+.art__title{
+    margin-top: 6px;
+  color: black;
+  font-size: 17px;
+  width: 80%;
+  font-weight: 600;
+}
+
+.art__comment:hover, .art__date:hover, .art__title:hover{
+  color: #ccaf0a;
+  transition: .5s all ease-in;
+}
+
+
+@media screen and (max-width: 1300px){
+    .blogs{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .blogs{
+           padding: 25px 7px;
+    }
+  .blog__body{
+      width: 96%;
+  }
+}

@@ -1,0 +1,225 @@
+.comingsoon{
+    width: 80%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);    width: 80%;    padding: 25px 50px;
+}
+
+
+.soon__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.soon__header h1{
+    margin-bottom: 10px;
+    color: #eaf0fb;
+    text-shadow: 2px 2px rgba(0,0,0,0.3);
+}
+
+.soon__header a{
+    text-decoration: none;
+    font-size: 16px;
+    align-items: center;
+    text-transform: uppercase;
+    color: #8d8888;
+    transition: .5s all ease;
+}
+.soon__header a:hover{
+    color: #ccaf0a;
+}
+.comingsoon__body{
+    display: flex;
+}
+.slide__body{
+    width: 39%;
+    margin-right: 20px;
+}
+.subslide{
+    height: 870px;
+}
+.subslide img{   
+   object-fit: cover; 
+   object-position: cover;
+   width: 100%;
+   height: 870px;
+   border-radius: 7px;
+}
+.vamp{
+    object-fit: fill;
+}
+.flex__body{
+    width: 65%;
+    
+}
+.subflex__body{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+}
+
+.flex__cat{
+    position: relative;
+    height: 440px;
+    padding: 15px;
+    transition: all .5s ease;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);
+}
+ 
+ .flex__icon{
+    top: 7%;
+    right: 7%;
+    position: absolute;
+    border-radius: 30%;
+    padding: 10px;
+    background-color: #ccaf0a;
+    font-size: 35px;
+    cursor: pointer;
+    transition: .5s all ease;
+    opacity: 0;
+    background: rgba(255,255,255,0.2);
+    color: black;
+    backdrop-filter: blur(15px)
+}
+.flex__icon:hover{
+    background-color: #f3f0f0;
+}
+.addtocart1{
+    bottom: 29%;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    padding: 10px 5px;
+    background-color: #ccaf0a;
+    width:70%;
+    cursor: pointer;
+    margin: auto;
+    text-decoration: none;
+    transition: .5s all ease;
+    opacity: 0;
+    font-size: 11.5px;
+    left: 8%;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    background: rgba(255,255,255,0.2);
+    color: black;
+    backdrop-filter: blur(15px);
+
+}
+.addtocart1:hover{
+    background-color: #f3f0f0;
+}
+.ii{
+    margin-right: 5px;
+}
+.flex__cat:hover .addtocart1{
+    opacity: 1;
+    bottom: 32%;
+}
+.flex__cat:hover .flex__icon{
+    opacity: 1;
+    right: 10%;
+}
+
+
+
+.flex__cat img{
+   width: 100%;
+   object-fit: cover;
+   height: 300px;
+   border-radius: 7px;
+}
+.flexx__body{
+    display: flex;
+    flex-direction: column;
+}
+.flex__body a{
+   text-decoration: none;
+  margin-bottom: 5px;
+}
+.flex__body .genre{
+    color: #8d8888;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.flex__body .title{
+    text-align: left;
+    font-size: 15px;
+    color: #eaf0fb;
+    text-shadow: 2px 2px rgba(0,0,0,0.3);   
+}
+.flex__body .price{
+    color: #ccaf0a;
+}
+.flex__body .info{
+    position: absolute;
+    padding: 2px 3px;
+    border: 1px solid #f75a5a;
+    background-color: #f75a5a;
+    top: 4%;
+    left: 8%;
+    color: white;
+    font-size: 13px;
+}
+@media screen and (max-width: 1300px){
+    .comingsoon{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 990px){
+    .comingsoon__body{
+        display: flex;
+        flex-direction: column;
+    }
+    .addtocart1{
+        font-size: 9.8px;
+    }
+    .slide__body{
+        width: 100%;
+        margin-right: 0px;
+    }
+    .flex__body{
+        width: 100%;
+        
+    }
+    .addtocart1{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 768px){
+    .comingsoon{
+        padding: 25px 20px;
+    }
+  .subflex__body{
+    display: grid;
+    grid-template-columns:  1fr 1fr ;
+}
+.addtocart1{
+    font-size: 11.8px;
+}
+.soon__header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px){
+    .comingsoon{
+        padding: 25px 4px;
+    }
+    .addtocart1{
+        font-size: 9px;
+        left: 10%;
+    }
+    .flex__cat{
+        height: 440px;
+        padding: 10px;
+        
+    }
+}

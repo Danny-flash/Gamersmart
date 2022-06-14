@@ -1,0 +1,113 @@
+.accessories{
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);    width: 80%;    width: 80%;
+    margin:  auto;
+    padding: 35px 50px;
+    align-items: center;
+   
+}
+
+.access__body{
+    margin: 40px auto;
+    width: 90%;
+}
+.access__cat{
+    position: relative;
+    transition: all .5s ease;
+    align-items: center;
+   
+}
+.access__img img{
+    object-fit: cover;
+    width: 100%;
+}
+.access__img{
+    height: 200px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.access__icon{
+    top: 7%;
+    right: 7%;
+    position: absolute;
+    border-radius: 30%;
+    padding: 10px;
+    background-color: #ccaf0a;
+    font-size: 35px;
+    cursor: pointer;
+    transition: .5s all ease;
+    opacity: 0;
+    background: rgba(255,255,255,0.2);
+    color: black;
+    backdrop-filter: blur(15px)
+}
+.access__icon:hover{
+    background-color: #f3f0f0;
+}
+.access__body{
+    display: flex;
+    flex-direction: column;
+}
+.access__body a{
+   text-decoration: none;
+  margin-bottom: 5px;
+}
+.yy{
+    margin-right: 5px;
+}
+.access__body .title{
+    text-align: left;
+    font-size: 15px;
+    color: #eaf0fb;
+    text-shadow: 2px 2px rgba(0,0,0,0.3);    margin-bottom: 10px;
+}
+.access__body .price{
+    color: #ccaf0a;
+}
+.access__cat:hover .addtocart2{
+    opacity: 1;
+    bottom: 32%;
+}
+.access__cat:hover .access__icon{
+    opacity: 1;
+    right: 10%;
+}
+.addtocart2{
+    bottom: 29%;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    padding: 8px;
+    background-color: #ccaf0a;
+    width:70%;
+    cursor: pointer;
+    margin: auto;
+    text-decoration: none;
+    transition: .5s all ease;
+    opacity: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    background: rgba(255,255,255,0.2);
+    color: black;
+    backdrop-filter: blur(15px)
+}
+.addtocart2:hover{
+    background-color: #f3f0f0;
+}
+
+@media screen and (max-width: 1300px){
+  
+    .accessories{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+  
+    .accessories{
+        padding: 25px 10px;
+    }
+}

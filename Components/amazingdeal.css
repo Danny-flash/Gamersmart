@@ -1,0 +1,88 @@
+.amazingDeals{
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);    width: 80%;    width: 80%;
+    margin:  auto;
+    padding: 35px 50px;
+    align-items: center;
+  
+}
+
+.amazing__container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.deal img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+.deal:hover img{
+    transform: scale(1.1);
+    transition: all ease .5s;
+    
+}
+.deal{
+    position: relative;
+    overflow: hidden;
+}
+.deal__body{
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+}
+.deal__body p{
+    font-size: 15px;
+    color: #ccaf0a;
+}
+.deal__body button{
+    outline: 0;
+    border: none;
+    background-color: #ccaf0a;
+    font-size: 11.5px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 10px;
+    width: 100%;
+    transition: .5s all ease;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    background: rgba(255,255,255,0.2);
+    color: black;
+    backdrop-filter: blur(15px)
+}
+.deal__body button:hover{
+    background-color: #dbdada;
+}
+@media screen and (max-width: 1300px){
+  
+    .amazingDeals{
+        width: 100%;
+        margin: 0 auto;
+        background: rgba(255,255,255,0.05);
+        backdrop-filter: blur(15px); 
+    }
+}
+@media screen and (max-width: 990px){
+    .amazingDeals{
+        padding: 25px 30px;
+    }
+}
+@media screen and (max-width: 768px){
+    .amazing__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        align-items: center;
+       justify-content: center;
+      }
+}
+@media screen and (max-width: 500px){
+    .amazing__container{
+        grid-template-columns: 1fr;
+      }
+}
